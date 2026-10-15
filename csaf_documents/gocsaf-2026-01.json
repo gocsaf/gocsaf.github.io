@@ -25,6 +25,13 @@
     "title": "gocsaf/csaf: csaf_provider uncontrolled resource consumption vulnerability",
     "tracking": {
       "current_release_date": "2026-10-16T00:00:00Z",
+      "generator": {
+        "date": "2026-10-15T09:19:15.603Z",
+        "engine": {
+          "name": "Secvisogram",
+          "version": "2.6.14"
+        }
+      },
       "id": "gocsaf-2026-01",
       "initial_release_date": "2026-10-16T00:00:00Z",
       "revision_history": [
@@ -45,24 +52,100 @@
           {
             "branches": [
               {
-                "category": "product_version_range",
-                "name": "vers:semver/>=0.0.0|<=3.6.0",
-                "product": {
-                  "name": "csaf_provider versions 0.0.0 through 3.6.0",
-                  "product_id": "gocsaf-csaf-provider-b3.6.0"
-                }
+                "branches": [
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:all/*",
+                    "product": {
+                      "name": "csaf_aggregator all versions",
+                      "product_id": "gocsaf-csaf-aggregator"
+                    }
+                  }
+                ],
+                "category": "product_name",
+                "name": "csaf_aggregator"
               },
               {
-                "category": "product_version_range",
-                "name": "vers:semver/>=3.7.0",
-                "product": {
-                  "name": "csaf_provider versions 3.7.0 and later",
-                  "product_id": "gocsaf-csaf-provider-a3.7.0"
-                }
+                "branches": [
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:all/*",
+                    "product": {
+                      "name": "csaf_checker all versions",
+                      "product_id": "gocsaf-csaf-checker"
+                    }
+                  }
+                ],
+                "category": "product_name",
+                "name": "csaf_checker"
+              },
+              {
+                "branches": [
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:all/*",
+                    "product": {
+                      "name": "csaf_downloader all versions",
+                      "product_id": "gocsaf-csaf-downloader"
+                    }
+                  }
+                ],
+                "category": "product_name",
+                "name": "csaf_downloader"
+              },
+              {
+                "branches": [
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:semver/>=0.0.0|<=3.6.0",
+                    "product": {
+                      "name": "csaf_provider versions 0.0.0 through 3.6.0",
+                      "product_id": "gocsaf-csaf-provider-b3.6.0"
+                    }
+                  },
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:semver/>=3.7.0",
+                    "product": {
+                      "name": "csaf_provider versions 3.7.0 and later",
+                      "product_id": "gocsaf-csaf-provider-a3.7.0"
+                    }
+                  }
+                ],
+                "category": "product_name",
+                "name": "csaf_provider"
+              },
+              {
+                "branches": [
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:all/*",
+                    "product": {
+                      "name": "csaf_uploader all versions",
+                      "product_id": "gocsaf-csaf-uploader"
+                    }
+                  }
+                ],
+                "category": "product_name",
+                "name": "csaf_uploader"
+              },
+              {
+                "branches": [
+                  {
+                    "category": "product_version_range",
+                    "name": "vers:all/*",
+                    "product": {
+                      "name": "csaf_validator all versions",
+                      "product_id": "gocsaf-csaf-validator"
+                    }
+                  }
+                ],
+                "category": "product_name",
+                "name": "csaf_validator"
               }
             ],
-            "category": "product_name",
-            "name": "csaf_provider"
+            "category": "product_family",
+            "name": "gocsaf/csaf"
           }
         ],
         "category": "vendor",
@@ -85,7 +168,12 @@
           "gocsaf-csaf-provider-b3.6.0"
         ],
         "known_not_affected": [
-          "gocsaf-csaf-provider-a3.7.0"
+          "gocsaf-csaf-aggregator",
+          "gocsaf-csaf-checker",
+          "gocsaf-csaf-downloader",
+          "gocsaf-csaf-provider-a3.7.0",
+          "gocsaf-csaf-uploader",
+          "gocsaf-csaf-validator"
         ]
       },
       "references": [
@@ -128,16 +216,51 @@
       "threats": [
         {
           "category": "impact",
-          "details": "An unauthenticated remote attacker may use a allocation of resources without limits or throttling weakness in the affected product to cause high CPU load leading to a denial of service.",
+          "details": "An unauthenticated remote attacker may use an allocation of resources without limits or throttling weakness in the affected product to cause high CPU load leading to a denial of service.",
           "product_ids": [
             "gocsaf-csaf-provider-b3.6.0"
           ]
         },
         {
           "category": "impact",
-          "details": "Versions 3.7.0 and later are not affected by this vulnerability because the vulnerability has been fixed in version 3.7.0.",
+          "details": "Not affected. The vulnerability was fixed in version 3.7.0.",
           "product_ids": [
             "gocsaf-csaf-provider-a3.7.0"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "Not affected.",
+          "product_ids": [
+            "gocsaf-csaf-aggregator"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "Not affected",
+          "product_ids": [
+            "gocsaf-csaf-checker"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "Not affected",
+          "product_ids": [
+            "gocsaf-csaf-downloader"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "Not affected",
+          "product_ids": [
+            "gocsaf-csaf-uploader"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "Not affected",
+          "product_ids": [
+            "gocsaf-csaf-validator"
           ]
         }
       ],

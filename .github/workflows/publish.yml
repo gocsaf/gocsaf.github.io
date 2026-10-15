@@ -1,0 +1,37 @@
+name: Validate & publish CSAF advisories
+on:
+# TODO: Reenable with valid openpgp key
+#  push:
+#    branches:
+#      - main
+#    paths:
+#      - 'csaf_documents/**.json'
+#      - 'csaf_documents/**.asc'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  csaf:
+    runs-on: ubuntu-24.04
+    name: Update CSAF provider
+    strategy:
+      fail-fast: false
+
+    steps:
+    - name: Publish CSAF advisories
+      uses: csaf-tools/csaf-action@v0
+      with:
+        publisher_category: vendor
+        publisher_name: gocsaf Development Community
+        publisher_namespace: https://github.com/gocsaf
+        publisher_issuing_authority: Developers of the Free Software gocsaf
+        publisher_contact_details: Open public issues at https://github.com/gocsaf or contact one of the recently active developers in confidence.
+        source_csaf_documents: csaf_documents
+        generate_index_files: true
+        openpgp_use_signatures: true
+        # TODO: Create valid openpgp key
+        openpgp_public_key: |
+          -----BEGIN PGP PUBLIC KEY BLOCK-----
+          -----END PGP PUBLIC KEY BLOCK-----

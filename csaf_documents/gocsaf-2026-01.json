@@ -1,0 +1,147 @@
+{
+  "document": {
+    "category": "csaf_vex",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/v1/"
+      }
+    },
+    "lang": "en",
+    "publisher": {
+      "category": "vendor",
+      "contact_details": "See contact points at https://github.com/gocsaf",
+      "name": "gocsaf Development Community",
+      "namespace": "https://github.com/gocsaf"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "gocsaf-2026-01",
+        "url": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-01.json"
+      }
+    ],
+    "title": "gocsaf/csaf: csaf_provider uncontrolled resource consumption vulnerability",
+    "tracking": {
+      "current_release_date": "2026-10-16T00:00:00Z",
+      "id": "gocsaf-2026-01",
+      "initial_release_date": "2026-10-16T00:00:00Z",
+      "revision_history": [
+        {
+          "date": "2026-10-16T00:00:00Z",
+          "number": "1.0.0",
+          "summary": "Initial revision"
+        }
+      ],
+      "status": "final",
+      "version": "1.0.0"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:semver/>=0.0.0|<=3.6.0",
+                "product": {
+                  "name": "csaf_provider versions 0.0.0 through 3.6.0",
+                  "product_id": "gocsaf-csaf-provider-b3.6.0"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "vers:semver/>=3.7.0",
+                "product": {
+                  "name": "csaf_provider versions 3.7.0 and later",
+                  "product_id": "gocsaf-csaf-provider-a3.7.0"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "csaf_provider"
+          }
+        ],
+        "category": "vendor",
+        "name": "gocsaf Development Community"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-107564",
+      "notes": [
+        {
+          "category": "description",
+          "text": "An unauthenticated remote attacker may exploit an allocation of resources without limits or throttling in csaf_provider to cause high CPU load leading to a denial of service.",
+          "title": "Vulnerability description"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "gocsaf-csaf-provider-b3.6.0"
+        ],
+        "known_not_affected": [
+          "gocsaf-csaf-provider-a3.7.0"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "CVE-2026-107564",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-107564"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Update csaf_provider to version 3.7.0 or later. Versions 3.7.0 and later are not affected by this vulnerability.",
+          "product_ids": [
+            "gocsaf-csaf-provider-b3.6.0"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "gocsaf-csaf-provider-b3.6.0"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "An unauthenticated remote attacker may use a allocation of resources without limits or throttling weakness in the affected product to cause high CPU load leading to a denial of service.",
+          "product_ids": [
+            "gocsaf-csaf-provider-b3.6.0"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "Versions 3.7.0 and later are not affected by this vulnerability because the vulnerability has been fixed in version 3.7.0.",
+          "product_ids": [
+            "gocsaf-csaf-provider-a3.7.0"
+          ]
+        }
+      ],
+      "title": "gocsaf/csaf: csaf_provider prone to uncontrolled resource consumption"
+    }
+  ]
+}

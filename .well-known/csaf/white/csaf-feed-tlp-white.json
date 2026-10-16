@@ -1,0 +1,57 @@
+{
+  "feed": {
+    "id": "csaf-feed-tlp-white",
+    "title": "CSAF feed (TLP:WHITE)",
+    "link": [
+      {
+        "rel": "self",
+        "href": "https://gocsaf.github.io/.well-known/csaf/white/csaf-feed-tlp-white.json"
+      },
+      {
+        "rel": "service",
+        "href": "https://gocsaf.github.io/.well-known/csaf/service.json"
+      }
+    ],
+    "category": [
+      {
+        "scheme": "urn:ietf:params:rolie:category:information-type",
+        "term": "csaf"
+      }
+    ],
+    "updated": "2026-10-16T09:31:31Z",
+    "entry": [
+      {
+        "content": {
+          "type": "application/json",
+          "src": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-001.json"
+        },
+        "id": "gocsaf-2026-001",
+        "link": [
+          {
+            "rel": "self",
+            "href": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-001.json"
+          },
+          {
+            "rel": "hash",
+            "href": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-001.json.sha256"
+          },
+          {
+            "rel": "hash",
+            "href": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-001.json.sha512"
+          },
+          {
+            "rel": "signature",
+            "href": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-001.json.asc"
+          }
+        ],
+        "published": "2026-10-16T08:00:00Z",
+        "title": "gocsaf/csaf: csaf_provider uncontrolled resource consumption vulnerability",
+        "updated": "2026-10-16T08:00:00Z",
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      }
+    ]
+  }
+}

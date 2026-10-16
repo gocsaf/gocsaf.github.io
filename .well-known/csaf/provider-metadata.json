@@ -1,0 +1,37 @@
+{
+  "canonical_url": "https://gocsaf.github.io/.well-known/csaf/provider-metadata.json",
+  "distributions": [
+    {
+      "rolie": {
+        "feeds": [
+          {
+            "summary": "TLP:WHITE advisories",
+            "tlp_label": "WHITE",
+            "url": "https://gocsaf.github.io/.well-known/csaf/white/csaf-feed-tlp-white.json"
+          }
+        ]
+      }
+    },
+    {
+      "directory_url": "https://gocsaf.github.io/.well-known/csaf/white"
+    }
+  ],
+  "last_updated": "2026-10-16T09:31:19Z",
+  "list_on_CSAF_aggregators": true,
+  "metadata_version": "2.0",
+  "mirror_on_CSAF_aggregators": true,
+  "public_openpgp_keys": [
+    {
+      "fingerprint": "A55AB38B108951C4A2002DDF255474BA7DB2843D",
+      "url": "https://gocsaf.github.io/.well-known/csaf/openpgp/A55AB38B108951C4A2002DDF255474BA7DB2843D.asc"
+    }
+  ],
+  "publisher": {
+    "category": "vendor",
+    "name": "gocsaf Development Community",
+    "namespace": "https://github.com/gocsaf",
+    "contact_details": "Open public issues at https://github.com/gocsaf or contact one of the recently active developers in confidence.",
+    "issuing_authority": "Developers of the Free Software gocsaf"
+  },
+  "role": "csaf_trusted_provider"
+}

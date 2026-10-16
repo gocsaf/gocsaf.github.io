@@ -97,10 +97,10 @@
                     }
                   },
                   {
-                    "category": "product_version_range",
-                    "name": "vers:semver/>=3.7.0",
+                    "category": "product_version",
+                    "name": "3.7.0",
                     "product": {
-                      "name": "csaf_provider versions 3.7.0 and later",
+                      "name": "csaf_provider versions 3.7.0",
                       "product_id": "gocsaf-csaf-provider-a3.7.0"
                     }
                   }
@@ -149,6 +149,14 @@
   "vulnerabilities": [
     {
       "cve": "CVE-2026-107564",
+      "involvements": [
+        {
+          "date": "2026-09-18T08:25:00.000Z",
+          "party": "discoverer",
+          "status": "completed",
+          "summary": "https://github.com/kta1kri: Discovered the vulnerability and contacted the gocsaf Development Community via email."
+        }
+      ],
       "notes": [
         {
           "category": "description",
@@ -157,6 +165,12 @@
         }
       ],
       "product_status": {
+        "first_fixed": [
+          "gocsaf-csaf-provider-a3.7.0"
+        ],
+        "fixed": [
+          "gocsaf-csaf-provider-a3.7.0"
+        ],
         "known_affected": [
           "gocsaf-csaf-provider-b3.6.0"
         ],
@@ -164,7 +178,6 @@
           "gocsaf-csaf-aggregator",
           "gocsaf-csaf-checker",
           "gocsaf-csaf-downloader",
-          "gocsaf-csaf-provider-a3.7.0",
           "gocsaf-csaf-uploader",
           "gocsaf-csaf-validator"
         ]

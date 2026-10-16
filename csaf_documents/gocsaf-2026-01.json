@@ -18,25 +18,18 @@
     "references": [
       {
         "category": "self",
-        "summary": "gocsaf-2026-01",
-        "url": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-01.json"
+        "summary": "gocsaf-2026-001",
+        "url": "https://gocsaf.github.io/.well-known/csaf/white/2026/gocsaf-2026-001.json"
       }
     ],
     "title": "gocsaf/csaf: csaf_provider uncontrolled resource consumption vulnerability",
     "tracking": {
-      "current_release_date": "2026-10-16T00:00:00Z",
-      "generator": {
-        "date": "2026-10-15T09:19:15.603Z",
-        "engine": {
-          "name": "Secvisogram",
-          "version": "2.6.14"
-        }
-      },
-      "id": "gocsaf-2026-01",
-      "initial_release_date": "2026-10-16T00:00:00Z",
+      "current_release_date": "2026-10-16T08:00:00Z",
+      "id": "gocsaf-2026-001",
+      "initial_release_date": "2026-10-16T08:00:00Z",
       "revision_history": [
         {
-          "date": "2026-10-16T00:00:00Z",
+          "date": "2026-10-16T08:00:00Z",
           "number": "1.0.0",
           "summary": "Initial revision"
         }

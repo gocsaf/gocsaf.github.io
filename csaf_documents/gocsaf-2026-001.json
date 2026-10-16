@@ -100,8 +100,8 @@
                     "category": "product_version",
                     "name": "3.7.0",
                     "product": {
-                      "name": "csaf_provider versions 3.7.0",
-                      "product_id": "gocsaf-csaf-provider-a3.7.0"
+                      "name": "csaf_provider version 3.7.0",
+                      "product_id": "gocsaf-csaf-provider-3.7.0"
                     }
                   }
                 ],
@@ -166,10 +166,10 @@
       ],
       "product_status": {
         "first_fixed": [
-          "gocsaf-csaf-provider-a3.7.0"
+          "gocsaf-csaf-provider-3.7.0"
         ],
         "fixed": [
-          "gocsaf-csaf-provider-a3.7.0"
+          "gocsaf-csaf-provider-3.7.0"
         ],
         "known_affected": [
           "gocsaf-csaf-provider-b3.6.0"
@@ -231,7 +231,7 @@
           "category": "impact",
           "details": "Not affected. The vulnerability was fixed in version 3.7.0.",
           "product_ids": [
-            "gocsaf-csaf-provider-a3.7.0"
+            "gocsaf-csaf-provider-3.7.0"
           ]
         },
         {
